@@ -28,15 +28,11 @@ function App() {
     event.preventDefault();
   };
 
-  // upon submission, user's order history is updated with the new order
-  // on clicking an older order, show the previous order details
-
   return (
     <>
-      <h1>Hello PizzaWorld</h1>
-      <h2>Pie Builder</h2>
+      <h1>PizzaWorld Pie Builder</h1>
 
-      <form onSubmit={handleSubmit}>
+      <form className="mainForm" onSubmit={handleSubmit}>
         <label>
           Pie Nickname:
           <input
@@ -73,10 +69,10 @@ function App() {
           <option value="Extra">Extra</option>
         </select>
         <label>
-          Toppings:
+          Toppings:<br></br>
           <textarea
             type="textarea"
-            rows="1.5"
+            rows="4"
             cols="20"
             value={currenttopping}
             placeholder={orderHistory[0]?.toppings.join(", ")}
@@ -88,6 +84,7 @@ function App() {
               }
             }}
           />
+          <br></br>
           <button
             onClick={() => {
               setToppings(toppings.concat(currenttopping));
@@ -98,6 +95,7 @@ function App() {
           </button>
         </label>
         <input
+          className="submitButton"
           type="submit"
           onClick={(e) => {
             const newOrder = {
@@ -120,22 +118,50 @@ function App() {
 
       <h2>Current Creation </h2>
       <section className="currentOrder">
-        <div className="currentList">{nickname}</div>
-        <div className="currentList">{size}</div>
-        <div className="currentList">{crust}</div>
-        <div className="currentList">{cheese}</div>
-        <div className="currentList">{toppings.join(", ")}</div>
+        <div className="currentList">
+          {nickname}
+          <p>Pizza Nickname</p>
+        </div>
+        <div className="currentList">
+          {size}
+          <p>Pie Size</p>
+        </div>
+        <div className="currentList">
+          {crust}
+          <p>Crust Type</p>
+        </div>
+        <div className="currentList">
+          {cheese}
+          <p>Cheese Amount</p>
+        </div>
+        <br></br>
+      </section>
+      <section className="currentOrder">
+        <div className="listToppings">
+          <p className="toppingsPad">Added Toppings</p>
+          {toppings.join(", ")}
+        </div>
       </section>
 
       <h2>Previous Pie Orders</h2>
       <section className="orderHistory">
         {orderHistory.map((order) => (
           <div key={order.id} className="pieHistory">
-            <div className="orderList">{order.nickname}</div>
-            <div className="orderList">{order.size}</div>
-            <div className="orderList">{order.crust}</div>
-            <div className="orderList">{order.cheese}</div>
-            <div className="orderList">{order.toppings}</div>
+            <div className="orderList">
+              <h5>Pizza Nickname:</h5> {order.nickname}
+            </div>
+            <div className="orderList">
+              <h5>Pie Size (in inches):</h5> {order.size}
+            </div>
+            <div className="orderList">
+              <h5>Crust Type:</h5> {order.crust}
+            </div>
+            <div className="orderList">
+              <h5>Cheese Amount:</h5> {order.cheese}
+            </div>
+            <div className="orderList">
+              <h4>Toppings:</h4> {order.toppings.join(", ")}
+            </div>
           </div>
         ))}
       </section>

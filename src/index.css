@@ -1,15 +1,86 @@
+body {
+    text-align: center;
+    background-image: url("https://cdn.midjourney.com/67430a4d-df38-4106-bdf1-4640d7164e6b/0_1.webp");
+    background-repeat: repeat;
+    background-size: 500px;
+}
+
+h1 {
+    text-decoration: underline;
+}
+
+h2 {
+    text-decoration: underline;
+}
+
+h4 {
+    padding: 0 auto;
+    margin: 0 auto;
+    font-weight: 627;
+    font-size: small;
+}
+
+h5 {
+    padding: 0 auto;
+    margin: 0 auto;
+    font-weight: 627;
+    font-size: small;
+    display: inline;
+}
+
+
+
+p {
+    font-size: small;
+    padding-top: 10px;
+}
+
 form {
-    padding: 5px;
-    margin: 5px; 
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    width: 300px;
+    margin: 0 auto;
+    border: 2px dashed rgb(0, 0, 0);
+    border-radius: 5px;
+    background-color: rgba(149, 149, 149, 0.642);
 }
 
 input {
     padding: 2px;
     margin: 5px; 
+    border: 2px dotted rgba(0, 0, 0, 0.8);
+    border-radius: 1px;
+    background-color: rgba(224, 224, 224, 0.642);
 }
 
 select {
     margin: 5px; 
+    border: 2px dotted rgba(0, 0, 0, 0.8);
+    border-radius: 1px;
+    background-color: rgba(224, 224, 224, 0.642);
+}
+
+textarea {
+    margin: 5px; 
+    border: 2px dotted rgba(0, 0, 0, 0.8);
+    border-radius: 1px;
+    background-color: rgba(224, 224, 224, 0.642);
+}
+
+button {
+    background-color: rgba(224, 224, 224, 0.642);
+    border-radius: 10px;
+}
+
+.submitButton {
+    border-radius: 15px;
+    border: 2px solid rgba(0, 0, 0, 0.8);
+}
+
+.mainForm {
+    margin: 0 auto; 
 }
 
 .orderHistory {
@@ -31,18 +102,64 @@ select {
     margin: 20px;
     border: 2px dashed black;
     border-radius: 10px;
+    width: 300px;
+    background-color: rgba(149, 149, 149, 0.642);
+    background-size: 200px;
+}
+
+.pieHistory:hover {
+    background-image: url("https://cdn.midjourney.com/2d724719-41f3-419a-b2e2-68e490b6dd24/0_0.webp");
+    background-size: 350px;
+    background-position: center;
+    opacity: 70%;
 }
 
 .orderList {
     margin: 2px;
     padding: 1px;
-    border: 10px black;
+    color: black;
 }
 
 .currentOrder {
-    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    margin: 0 auto;
 }
 
 .currentList {
     text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    padding: 2px;
+    margin: 2px;
+    border: 2px dashed black;
+    border-radius: 10px;
+    width: 100px;
+    height: 20px;
+    background-color: rgba(149, 149, 149, 0.642);
+    background-size: 200px;
+}
+
+.listToppings {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2px;
+    margin: 2px;
+    border: 2px dashed black;
+    border-radius: 10px;
+    width: 300px;
+    height: 100px;
+    background-color: rgba(149, 149, 149, 0.642);
+}
+
+.toppingsPad {
+    padding-top: 130px;
 }
