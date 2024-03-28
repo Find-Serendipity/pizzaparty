@@ -1,0 +1,48 @@
+form {
+    padding: 5px;
+    margin: 5px; 
+}
+
+input {
+    padding: 2px;
+    margin: 5px; 
+}
+
+select {
+    margin: 5px; 
+}
+
+.orderHistory {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    margin: 20px;
+}
+
+.pieHistory {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    padding: 20px;
+    margin: 20px;
+    border: 2px dashed black;
+    border-radius: 10px;
+}
+
+.orderList {
+    margin: 2px;
+    padding: 1px;
+    border: 10px black;
+}
+
+.currentOrder {
+    text-align: center;
+}
+
+.currentList {
+    text-align: center;
+}
