@@ -37,7 +37,7 @@ function App() {
           Pie Nickname:
           <input
             type="text"
-            placeholder={orderHistory[0]?.nickname}
+            placeholder={orderHistory[orderHistory.length - 1]?.nickname}
             value={nickname}
             onChange={(e) => setNickname(e.target.value)}
           />
@@ -46,7 +46,7 @@ function App() {
           Pie Size:
           <input
             type="number"
-            placeholder={orderHistory[0]?.size}
+            placeholder={orderHistory[orderHistory.length - 1]?.size}
             value={size}
             onChange={(e) => setSize(e.target.value)}
           />
@@ -75,7 +75,9 @@ function App() {
             rows="4"
             cols="20"
             value={currenttopping}
-            placeholder={orderHistory[0]?.toppings.join(", ")}
+            placeholder={orderHistory[orderHistory.length - 1]?.toppings.join(
+              ", "
+            )}
             onChange={(e) => setCurrentTopping(e.target.value)}
             onKeyDown={(e) => {
               if (e.key === "Enter") {
