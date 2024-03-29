@@ -121,27 +121,37 @@ function App() {
       <h2>Current Creation </h2>
       <section className="currentOrder">
         <div className="currentList">
-          {nickname}
-          <p>Pizza Nickname</p>
+          <p>
+            {nickname}
+            Pizza Nickname
+          </p>
         </div>
         <div className="currentList">
-          {size}
-          <p>Pie Size</p>
+          <p>
+            {size}
+            Pie Size
+          </p>
         </div>
         <div className="currentList">
-          {crust}
-          <p>Crust Type</p>
+          <p>
+            {crust}
+            Crust Type
+          </p>
         </div>
         <div className="currentList">
-          {cheese}
-          <p>Cheese Amount</p>
+          <p>
+            {cheese}
+            Cheese Amount
+          </p>
         </div>
         <br></br>
       </section>
       <section className="currentOrder">
         <div className="listToppings">
-          <p className="toppingsPad">Added Toppings</p>
-          {toppings.join(", ")}
+          <p className="toppingsPad">
+            Added Toppings
+            {toppings.join(", ")}
+          </p>
         </div>
       </section>
 
