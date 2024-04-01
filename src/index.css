@@ -1,19 +1,21 @@
 body {
-    text-align: center;
     background-image: url("https://cdn.midjourney.com/67430a4d-df38-4106-bdf1-4640d7164e6b/0_1.webp");
     background-repeat: repeat;
     background-size: 500px;
 }
 
 h1 {
+    text-align: center;
     text-decoration: underline;
 }
 
 h2 {
+    text-align: center;
     text-decoration: underline;
 }
 
 h4 {
+    text-align: center;
     padding: 0 auto;
     margin: 0 auto;
     font-weight: 627;
@@ -21,6 +23,7 @@ h4 {
 }
 
 h5 {
+    text-align: center;
     padding: 0 auto;
     margin: 0 auto;
     font-weight: 627;
@@ -31,11 +34,13 @@ h5 {
 
 
 p {
+    text-align: center;
     font-size: small;
     padding-top: 10px;
 }
 
 form {
+    text-align: center;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -48,6 +53,7 @@ form {
 }
 
 input {
+    text-align: center;
     padding: 2px;
     margin: 5px; 
     border: 2px dotted rgba(0, 0, 0, 0.8);
@@ -56,6 +62,7 @@ input {
 }
 
 select {
+    text-align: center;
     margin: 5px; 
     border: 2px dotted rgba(0, 0, 0, 0.8);
     border-radius: 1px;
@@ -63,6 +70,7 @@ select {
 }
 
 textarea {
+    text-align: center;
     margin: 5px; 
     border: 2px dotted rgba(0, 0, 0, 0.8);
     border-radius: 1px;
@@ -70,6 +78,7 @@ textarea {
 }
 
 button {
+    text-align: center;
     background-color: rgba(224, 224, 224, 0.642);
     border-radius: 10px;
 }
@@ -84,6 +93,7 @@ button {
 }
 
 .orderHistory {
+    text-align: center;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -93,7 +103,6 @@ button {
 }
 
 .pieHistory {
-    text-align: center;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -118,6 +127,7 @@ button {
     margin: 2px;
     padding: 1px;
     color: black;
+    font-size: small;
 }
 
 .currentOrder {
@@ -127,26 +137,25 @@ button {
     justify-content: center;
     padding: 20px;
     margin: 0 auto;
+    font-size: small;
 }
 
 .currentList {
-    text-align: center;
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: center;
     padding: 2px;
     margin: 2px;
     border: 2px dashed black;
     border-radius: 10px;
-    width: 100px;
+    width: 130px;
     height: 20px;
     background-color: rgba(149, 149, 149, 0.642);
     background-size: 200px;
 }
 
 .listToppings {
-    text-align: center;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -155,7 +164,7 @@ button {
     margin: 2px;
     border: 2px dashed black;
     border-radius: 10px;
-    width: 300px;
+    width: 200px;
     height: 100px;
     background-color: rgba(149, 149, 149, 0.642);
 }

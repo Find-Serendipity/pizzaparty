@@ -14,9 +14,9 @@ function App() {
   useEffect(() => {
     async function getOrderHistory() {
       try {
-        let getData = orderData;
-        console.log(getData);
-        setOrderHistory(getData);
+        let getImages = orderData;
+        console.log(getImages);
+        setOrderHistory(getImages);
       } catch (err) {
         console.log(err);
       }
@@ -69,7 +69,8 @@ function App() {
           <option value="Extra">Extra</option>
         </select>
         <label>
-          Toppings:<br></br>
+          Toppings:
+          <br />
           <textarea
             type="textarea"
             rows="4"
@@ -86,7 +87,7 @@ function App() {
               }
             }}
           />
-          <br></br>
+          <br />
           <button
             onClick={() => {
               setToppings(toppings.concat(currenttopping));
@@ -121,37 +122,27 @@ function App() {
       <h2>Current Creation </h2>
       <section className="currentOrder">
         <div className="currentList">
-          <p>
-            {nickname}
-            Pizza Nickname
-          </p>
+          {nickname} <br />
+          <p>Pizza Nickname</p>
         </div>
         <div className="currentList">
-          <p>
-            {size}
-            Pie Size
-          </p>
+          {size} <br />
+          <p>Pie Size</p>
         </div>
         <div className="currentList">
-          <p>
-            {crust}
-            Crust Type
-          </p>
+          {crust} <br />
+          <p>Crust Type</p>
         </div>
         <div className="currentList">
-          <p>
-            {cheese}
-            Cheese Amount
-          </p>
+          {cheese} <br />
+          <p>Cheese Amount</p>
         </div>
-        <br></br>
+        <br />
       </section>
       <section className="currentOrder">
         <div className="listToppings">
-          <p className="toppingsPad">
-            Added Toppings
-            {toppings.join(", ")}
-          </p>
+          <p className="toppingsPad">Added Toppings</p> <br />
+          {toppings.join(", ")}
         </div>
       </section>
 
