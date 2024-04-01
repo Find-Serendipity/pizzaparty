@@ -34,6 +34,7 @@ h5 {
 
 
 p {
+    position: absolute;
     text-align: center;
     font-size: small;
     padding-top: 10px;
@@ -156,19 +157,40 @@ button {
 }
 
 .listToppings {
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: center; */
     padding: 2px;
     margin: 2px;
     border: 2px dashed black;
     border-radius: 10px;
-    width: 200px;
+    width: 250px;
     height: 100px;
     background-color: rgba(149, 149, 149, 0.642);
 }
 
 .toppingsPad {
-    padding-top: 130px;
+    padding-top: 100px;
+    padding-left: 90px;
+    /* text-align: center; */
+}
+
+.currentItem {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.currentTopping {
+    text-align: center;    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 200px;
+    height: 90px;
+    padding: 10px;
 }
