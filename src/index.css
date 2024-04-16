@@ -220,23 +220,3 @@ button {
   }
   
   
-  /* Min-width: 992px */
-  @media (min-width: 992px) {
-    form,
-    .pieHistory,
-    .currentList,
-    .listToppings {
-        max-width: 500px;
-    }
-  }
-  
-  /* Min-width: 1200px */
-  @media (min-width: 1200px) {
-    form,
-    .pieHistory,
-    .currentList,
-    .listToppings {
-      max-width: 600px;
-    }
-  }
-  
