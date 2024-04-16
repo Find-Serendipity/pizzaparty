@@ -35,7 +35,7 @@ p {
     position: absolute;
     text-align: center;
     font-size: small;
-    padding-top: 10px;
+    padding: 15px;
 }
 
 form {
@@ -144,8 +144,8 @@ button {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 2px;
-    margin: 2px;
+    padding: 5px;
+    margin: 12px;
     border: 2px dashed black;
     border-radius: 10px;
     width: 130px;
@@ -155,8 +155,8 @@ button {
 }
 
 .listToppings {
-    padding: 2px;
-    margin: 2px;
+    padding: 3px;
+    margin: 3px;
     border: 2px dashed black;
     border-radius: 10px;
     width: 250px;
@@ -175,7 +175,8 @@ button {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 2px;
+    padding: 5px;
+    margin: 5px;
 }
 
 .currentTopping {
