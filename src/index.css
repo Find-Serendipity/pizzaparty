@@ -31,8 +31,6 @@ h5 {
     display: inline;
 }
 
-
-
 p {
     position: absolute;
     text-align: center;
@@ -157,10 +155,6 @@ button {
 }
 
 .listToppings {
-    /* display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center; */
     padding: 2px;
     margin: 2px;
     border: 2px dashed black;
@@ -173,7 +167,6 @@ button {
 .toppingsPad {
     padding-top: 100px;
     padding-left: 90px;
-    /* text-align: center; */
 }
 
 .currentItem {
@@ -195,3 +188,64 @@ button {
     height: 90px;
     padding: 10px;
 }
+
+/* Max-width: 600px */
+@media (max-width: 600px) {
+    form,
+    .pieHistory,
+    .pieHistory:hover,
+    .currentList,
+    .listToppings,
+    .currentTopping {
+      width: 600px;
+    }
+  }
+  
+  /* Min-width: 600px */
+  @media (min-width: 600px) {
+    form,
+    .pieHistory,
+    .pieHistory:hover,
+    .currentList,
+    .listToppings,
+    .currentTopping {
+      width: 600px;
+    }
+  }
+  
+  /* Min-width: 768px */
+  @media (min-width: 768px) {
+    form,
+    .pieHistory,
+    .pieHistory:hover,
+    .currentList,
+    .listToppings,
+    .currentTopping {
+      width: 768px;
+    }
+  }
+  
+  /* Min-width: 992px */
+  @media (min-width: 992px) {
+    form,
+    .pieHistory,
+    .pieHistory:hover,
+    .currentList,
+    .listToppings,
+    .currentTopping {
+        width: 100%;
+    }
+  }
+  
+  /* Min-width: 1200px */
+  @media (min-width: 1200px) {
+    form,
+    .pieHistory,
+    .pieHistory:hover,
+    .currentList,
+    .listToppings,
+    .currentTopping {
+      width: 100%;
+    }
+  }
+  
